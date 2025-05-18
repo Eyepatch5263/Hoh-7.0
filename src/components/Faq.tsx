@@ -6,7 +6,7 @@ const FAQ = () => {
 
     const facts = [
         {
-            title: "What exactly is Hack 5.0 - Obsidian Saga?",
+            title: "What exactly is HOH 7.0 - Marines of the blue?",
             description:
                 "It is not just a hackathon—it is an epic fusion of creativity, caffeine, and code! Think of it as a 48-hour sprint where brilliant minds come together to solve real problems, build cool stuff, and maybe win some brag-worthy prizes",
         },
@@ -32,7 +32,7 @@ const FAQ = () => {
         },
         {
             title: "Is there a registration fee?",
-            description: "No, Hack 5.0 is completely free! Just register and you are in.",
+            description: "No, HOH 7.0 is completely free! Just register and you are in.",
         },
     ];
 
@@ -76,7 +76,7 @@ const FAQ = () => {
                     Frequently Asked Questions
                 </h2>
                 <p className="text-lg text-white text-center mb-12 max-w-2xl mx-auto">
-                    Get all the answers you need about Hack 5.0.
+                    Get all the answers you need about HOH 7.0.
                 </p>
 
                 {/* FAQ Cards */}
