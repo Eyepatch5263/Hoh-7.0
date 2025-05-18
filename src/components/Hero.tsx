@@ -20,7 +20,7 @@ const Landing = () => {
                                     Dive into the Depths
                                 </span>
                                 <span className="block text-center">
-                                    of Oceanic Design
+                                    of Marines of the blue
                                 </span>
                             </h1>
                         </div>

@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Quote, Camera, Users, Trophy, Star } from 'lucide-react';
+import { Quote, Trophy } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';

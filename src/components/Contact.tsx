@@ -43,7 +43,7 @@ const ContactForm = () => {
                         <span className="absolute bottom-1 left-0 w-full h-3 bg-teal-200/50 -z-10 transform -rotate-1"></span>
                     </h2>
                     <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-                        Ready to elevate your digital experience with oceanic design? Let's connect.
+                        Ready to elevate your digital experience with oceanic design? Let&apos;s connect.
                     </p>
                 </div>
 
@@ -60,7 +60,7 @@ const ContactForm = () => {
                                 <Phone className="w-6 h-6 mr-4 text-teal-300" />
                                 <div>
                                     <h4 className="font-medium text-white">Call Us</h4>
-                                    <p className="text-blue-100">+1 (555) 123-4567</p>
+                                    <p className="text-blue-100">+91 9876547654</p>
                                 </div>
                             </div>
 
@@ -110,7 +110,7 @@ const ContactForm = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold text-blue-900 mb-2">Message Sent!</h3>
                                 <p className="text-blue-700 mb-6">
-                                    Thank you for reaching out. We'll get back to you soon.
+                                    Thank you for reaching out. We&apos;ll get back to you soon.
                                 </p>
                                 <button
                                     onClick={() => setIsSubmitted(false)}
