@@ -25,10 +25,10 @@ const Footer = () => {
                     <div>
                         <div className="flex items-center mb-4">
                             <Anchor className="w-8 h-8 text-teal-400" strokeWidth={2} />
-                            <span className="ml-2 text-xl font-semibold text-white">OceanicUI</span>
+                            <span className="ml-2 text-xl font-semibold text-white">Hack On Hills</span>
                         </div>
                         <p className="text-blue-200 mb-6">
-                            Immersive oceanic-themed UI components and animations for modern web applications.
+                            Hack On Hills is a hackathon event that brings together developers, designers, and innovators to create solutions for ocean conservation and sustainability.
                         </p>
                         <div className="flex space-x-4">
                             {['twitter', 'facebook', 'instagram', 'github'].map((social) => (

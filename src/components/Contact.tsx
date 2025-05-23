@@ -52,7 +52,7 @@ const ContactForm = () => {
                     <div className="lg:col-span-2 bg-gradient-to-br from-blue-800 to-teal-700 rounded-xl shadow-lg p-8 text-white">
                         <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
                         <p className="mb-8 text-blue-100">
-                            Have questions or ready to start your oceanic journey? Reach out to our team.
+                            Have questions or ready to start your marine journey? Reach out to our team.
                         </p>
 
                         <div className="space-y-6">
