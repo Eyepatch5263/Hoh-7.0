@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import {  Instagram, Linkedin } from 'lucide-react';
+import {  Instagram, LinkedinIcon } from 'lucide-react';
 import SectionTitle from '../../components/SectionTitle';
 
 interface TeamMemberProps {
@@ -119,7 +119,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, role, social }) =>
                             className="h-10 w-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-blue-600 transition-colors transform hover:scale-110"
                             aria-label={`${name}'s LinkedIn`}
                         >
-                            <Linkedin size={20} />
+                            <LinkedinIcon size={20} />
                         </a>
                     )}
                     {social.instagram && (
