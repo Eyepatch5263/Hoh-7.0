@@ -93,13 +93,13 @@ const Header = () => {
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg animate-fadeIn">
-                        <nav className="flex flex-col space-y-4 px-4">
+                        <nav className="flex flex-col space-y-4 px-4 items-center">
                             {['about', 'prize', 'testimonials', 'faq', "contact", "team"].map((item) => (
                                 item === 'team' ? (
                                     <a
                                         key={item}
                                         href="/team"
-                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize text-blue-900 hover:text-blue-700
                                             }`}
                                     >
                                         {item}
@@ -108,7 +108,7 @@ const Header = () => {
                                     <button
                                         key={item}
                                         onClick={() => scrollToSection(item)}
-                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize text-blue-900 hover:text-blue-700
                                             }`}
                                     >
                                         {item}
