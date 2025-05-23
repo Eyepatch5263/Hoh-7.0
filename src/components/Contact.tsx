@@ -131,7 +131,7 @@ const ContactForm = () => {
                                         name="name"
                                         value={formState.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
+                                        className="w-full px-4 placeholder:text-blue-400 py-3 rounded-lg border text-blue-800 border-blue-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent transition-all duration-300"
                                         placeholder="John Doe"
                                         required
                                     />
@@ -147,7 +147,7 @@ const ContactForm = () => {
                                         name="email"
                                         value={formState.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
+                                        className="w-full px-4 placeholder:text-blue-400 py-3 rounded-lg border text-blue-800 border-blue-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent transition-all duration-300"
                                         placeholder="john@example.com"
                                         required
                                     />
@@ -163,7 +163,7 @@ const ContactForm = () => {
                                         value={formState.message}
                                         onChange={handleChange}
                                         rows={5}
-                                        className="w-full px-4 py-3 rounded-lg border border-blue-200 focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300"
+                                        className="w-full px-4 placeholder:text-blue-400 py-3 rounded-lg border text-blue-800 border-blue-200 focus:ring-2 focus:ring-cyan-600 focus:border-transparent transition-all duration-300"
                                         placeholder="Tell us about your project and how we can help..."
                                         required
                                     />
