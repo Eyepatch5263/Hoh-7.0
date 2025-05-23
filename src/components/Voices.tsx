@@ -49,7 +49,7 @@ const galleryImages = [
 
 const Testimonial: React.FC<TestimonialProps> = ({ quote, author, role, image, project, award }) => {
     return (
-        <div className="bg-blue-900/20 backdrop-blur-sm rounded-xl p-6 border border-blue-800/30 relative group hover:border-cyan-500/30 transition-all">
+        <div id="testimonials" className="bg-blue-900/20 backdrop-blur-sm rounded-xl p-6 border border-blue-800/30 relative group hover:border-cyan-500/30 transition-all">
             <div className="absolute -top-4 left-6 h-8 w-8 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
                 <Quote size={16} className="text-white" />
             </div>

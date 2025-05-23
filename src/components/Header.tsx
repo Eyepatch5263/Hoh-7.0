@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Anchor } from 'lucide-react';
 
+
+
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,11 +33,13 @@ const Header = () => {
         }
     };
 
+
+
     return (
         <header
             className={`fixed w-full z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/90 backdrop-blur-md shadow-md py-3'
-                    : 'bg-transparent py-5'
+                ? 'bg-white/90 backdrop-blur-md shadow-md py-3'
+                : 'bg-transparent py-5'
                 }`}
         >
             <div className="container mx-auto px-4 md:px-6">
@@ -55,15 +59,26 @@ const Header = () => {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
-                        {['about', 'prize', 'testimonials', 'contact',"faq","team"].map((item) => (
-                            <button
-                                key={item}
-                                onClick={() => scrollToSection(item)}
-                                className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
-                                    }`}
-                            >
-                                {item}
-                            </button>
+                        {['about', 'prize', 'testimonials', 'faq', 'contact', 'team'].map((item) => (
+                            item === 'team' ? (
+                                <a
+                                    key={item}
+                                    href="/team"
+                                    className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                        }`}
+                                >
+                                    {item}
+                                </a>
+                            ) : (
+                                <button
+                                    key={item}
+                                    onClick={() => scrollToSection(item)}
+                                    className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                        }`}
+                                >
+                                    {item}
+                                </button>
+                            )
                         ))}
                     </nav>
 
@@ -81,14 +96,26 @@ const Header = () => {
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg animate-fadeIn">
                         <nav className="flex flex-col space-y-4 px-4">
-                            {['about', 'prize', 'testimonials', 'contact',"faq","team"].map((item) => (
-                                <button
-                                    key={item}
-                                    onClick={() => scrollToSection(item)}
-                                    className="text-blue-900 hover:text-blue-700 font-medium capitalize py-2"
-                                >
-                                    {item}
-                                </button>
+                            {['about', 'prize', 'testimonials', 'faq', "contact", "team"].map((item) => (
+                                item === 'team' ? (
+                                    <a
+                                        key={item}
+                                        href="/team"
+                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                            }`}
+                                    >
+                                        {item}
+                                    </a>
+                                ) : (
+                                    <button
+                                        key={item}
+                                        onClick={() => scrollToSection(item)}
+                                        className={`font-medium md:text-xl text-lg transition-colors duration-200 capitalize ${isScrolled ? 'text-blue-900 hover:text-blue-700' : 'text-white hover:text-blue-100'
+                                            }`}
+                                    >
+                                        {item}
+                                    </button>
+                                )
                             ))}
                         </nav>
                     </div>

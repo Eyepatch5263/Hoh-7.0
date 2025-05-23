@@ -69,7 +69,7 @@ const FAQ = () => {
     }, []);
 
     return (
-        <div id="faqs" className="snap-start pt-10 pb-10 flex flex-col w-screen min-h-screen ">
+        <div id="faq" className="snap-start pt-10 pb-10 flex flex-col w-screen">
             <div ref={sectionRef} className="transition-all duration-1000 ease-out mx-10">
                 {/* Title */}
                 <h2 className="md:text-5xl text-3xl font-bold text-center mb-4 text-white">

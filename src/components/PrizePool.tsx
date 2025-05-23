@@ -107,7 +107,7 @@ const PrizePoolSection: React.FC = () => {
     ];
 
     return (
-        <section id="prizes" className="py-20 bg-gradient-to-b from-blue-900 to-blue-950 relative overflow-hidden">
+        <section id="prize" className="py-20 bg-gradient-to-b from-blue-900 to-blue-950 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
                 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
                     <path fill="#0ea5e9" d="M39.9,-65.7C52.5,-58.4,64.2,-49.6,70.8,-37.6C77.4,-25.6,78.9,-10.4,77.8,4.5C76.7,19.4,73.1,34,65.4,46.5C57.7,59,45.9,69.3,32.4,74.2C18.9,79.1,3.8,78.5,-12.3,77.1C-28.3,75.8,-45.3,73.6,-56.9,64.2C-68.6,54.8,-74.9,38.1,-77.1,21.7C-79.3,5.2,-77.4,-11,-71.1,-25C-64.8,-39,-54.2,-50.9,-41.8,-58.6C-29.4,-66.4,-15.3,-70,-0.4,-69.4C14.5,-68.7,27.2,-72.9,39.9,-65.7Z" transform="translate(100 100) scale(1.5)" />
