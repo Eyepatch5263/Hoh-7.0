@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Anchor } from 'lucide-react';
 
-
-
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);

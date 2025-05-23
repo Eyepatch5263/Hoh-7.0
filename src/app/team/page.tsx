@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Github, Instagram, Linkedin, LinkedinIcon, Mail } from 'lucide-react';
+import {  Instagram, Linkedin } from 'lucide-react';
 import SectionTitle from '../../components/SectionTitle';
 
 interface TeamMemberProps {
