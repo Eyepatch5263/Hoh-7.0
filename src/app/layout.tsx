@@ -11,7 +11,7 @@ const sansita = Sansita({
 
 export const metadata: Metadata = {
   title: "Hack On Hills - 7.0",
-  description: "Join HACK 5.0, the premier hackathon event for innovators, builders, and dreamers. Compete for prizes, network with industry leaders, and showcase your skills.",
+  description: "Join HOH-7.0, the premier hackathon event for innovators, builders, and dreamers. Compete for prizes, network with industry leaders, and showcase your skills.",
   icons: {
     icon: "./hoh_logo.png"
   }
