@@ -1,7 +1,33 @@
-import React from 'react';
-import { Anchor } from 'lucide-react';
+"use client"
+import React, { useState, useEffect } from 'react';
 
 const Footer = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            setIsMenuOpen(false);
+        }
+    };
     return (
         <footer className="bg-blue-900 text-white pt-16 pb-8 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-12 bg-gradient-to-b from-white to-transparent opacity-5"></div>
@@ -24,18 +50,18 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <div className="flex items-center mb-4">
-                            <Anchor className="w-8 h-8 text-teal-400" strokeWidth={2} />
+                            <img width={"48"} src={'favicon.jpg'} />
                             <span className="ml-2 text-xl font-semibold text-white">Hack On Hills</span>
                         </div>
                         <p className="text-blue-200 mb-6">
-                            Hack On Hills is a hackathon event that brings together developers, designers, and innovators to create solutions for ocean conservation and sustainability.
+                            Hack On Hills is a hackathon event that brings together developers, designers, and innovators to create solutions for conservation and sustainability.
                         </p>
                         <div className="flex space-x-4">
                             {['twitter', 'facebook', 'instagram', 'github'].map((social) => (
                                 <a
                                     key={social}
                                     href="#"
-                                    className="w-10 h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors duration-300"
+                                    className="w-10 cursor-pointer h-10 rounded-full bg-blue-800 hover:bg-blue-700 flex items-center justify-center transition-colors duration-300"
                                     aria-label={`Follow us on ${social}`}
                                 >
                                     <span className="uppercase text-xs">{social.charAt(0)}</span>
@@ -48,12 +74,21 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4">Company</h4>
                         <ul className="space-y-3">
-                            {['About', 'Prize', 'Testimonials', 'Contact', 'Faq', "Team"].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors duration-300">
+                            {['about', 'prize', 'testimonials', 'contact', 'faq', "team"].map((item) => (
+                                item === 'team' ? (
+                                    <a
+                                        key={item}
+                                        href="/team"
+                                        className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300"
+                                    >
                                         {item}
                                     </a>
-                                </li>
+                                ) :
+                                    <li key={item}>
+                                        <a onClick={() => scrollToSection(item)} className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300">
+                                            {item}
+                                        </a>
+                                    </li>
                             ))}
                         </ul>
                     </div>

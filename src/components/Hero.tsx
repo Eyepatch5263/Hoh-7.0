@@ -17,10 +17,10 @@ const Landing = () => {
                         <div className="max-w-2xl flex justify-center items-center md:text-left mx-auto">
                             <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                                 <span className="block text-center">
-                                    Dive into the Depths
+                                    Beneath and Beyond
                                 </span>
                                 <span className="block text-center">
-                                    of Marines of the blue
+                                    Think Deeper, Build Farther
                                 </span>
                             </h1>
                         </div>

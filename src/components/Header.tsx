@@ -43,12 +43,15 @@ const Header = () => {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                        <Anchor
-                            className={`w-10 h-10 ${isScrolled ? 'text-blue-900' : 'text-white'}`}
-                            strokeWidth={2}
-                        />
+                        {
+                            !isScrolled ? (
+                                <img width={"48"} src={'favicon.jpg'} />
+                            ) : (
+                                <img width={"48"} src={'hoh3.png'} />
+                            )
+                        }
                         <span
-                            className={`ml-2 text-3xl font-semibold ${isScrolled ? 'text-blue-900' : 'text-white'
+                            className={`ml-4 text-3xl font-semibold ${isScrolled ? 'text-blue-900' : 'text-white'
                                 }`}
                         >
                             HOH

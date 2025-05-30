@@ -193,7 +193,7 @@ const TestimonialsEventsSection: React.FC = () => {
                 <div className="container mx-auto px-4 z-10">
                     <SectionTitle
                         title="Voices & Memories"
-                        subtitle="Hear from our past participants and relive the memorable moments from previous OceanHacks events."
+                        subtitle="Hear from our past participants and relive the memorable moments from previous HackOnHills events."
                         light={true}
                     />
 

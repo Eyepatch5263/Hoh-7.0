@@ -62,21 +62,21 @@ const PrizePoolSection: React.FC = () => {
     const mainPrizes = [
         {
             title: "Second Place",
-            amount: "20,000",
+            amount: "X0,000",
             description: "Runner-up prize for exceptional creativity and technical execution.",
             icon: <Award size={24} />,
             position: "second" as const
         },
         {
             title: "First Place",
-            amount: "40,000",
+            amount: "X0,000",
             description: "The grand prize for the most innovative and impactful ocean technology solution.",
             icon: <Trophy size={24} />,
             position: "first" as const
         },
         {
             title: "Third Place",
-            amount: "10,000",
+            amount: "X0,000",
             description: "Third place prize for outstanding achievement in ocean innovation.",
             icon: <Target size={24} />,
             position: "third" as const
@@ -86,22 +86,22 @@ const PrizePoolSection: React.FC = () => {
     const specialAwards = [
         {
             title: "Best Sustainability Solution",
-            prize: "5,000",
+            prize: "X,000",
             icon: <Lightbulb size={20} />
         },
         {
             title: "Most Technical Innovation",
-            prize: "5,000",
+            prize: "X,000",
             icon: <Trophy size={20} />
         },
         {
             title: "Best UI/UX Design",
-            prize: "5,000",
+            prize: "X,000",
             icon: <Award size={20} />
         },
         {
             title: "Community Choice",
-            prize: "5,000",
+            prize: "X,000",
             icon: <Target size={20} />
         }
     ];
@@ -117,7 +117,7 @@ const PrizePoolSection: React.FC = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <SectionTitle
                     title="Prize Pool"
-                    subtitle="Compete for a total prize pool of $22,500 across multiple categories and special awards."
+                    subtitle="Compete for a total prize pool of $XX,000 across multiple categories and special awards - Prizes will be Announced soon!"
                     light={true}
                 />
 
@@ -138,7 +138,7 @@ const PrizePoolSection: React.FC = () => {
 
                 <div className="mt-12 text-center">
                     <p className="text-blue-100/80 max-w-2xl mx-auto mb-6">
-                        All participants will receive exclusive OceanHacks swag, certificates of participation, and access to our network of ocean tech innovators and mentors.
+                        All participants will receive exclusive HackOnHills swag, certificates of participation, and access to our network of ocean tech innovators and mentors.
                     </p>
                     <a
                         href="#register"
