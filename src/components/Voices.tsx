@@ -9,8 +9,6 @@ import { useInView } from 'react-intersection-observer';
 interface TestimonialProps {
     quote: string;
     author: string;
-    role: string;
-    image: string;
     project: string;
     award?: string;
 }
@@ -47,7 +45,7 @@ const galleryImages = [
     }
 ];
 
-const Testimonial: React.FC<TestimonialProps> = ({ quote, author, role, image, project, award }) => {
+const Testimonial: React.FC<TestimonialProps> = ({ quote, author, project, award }) => {
     return (
         <div id="testimonials" className="bg-blue-900/20 backdrop-blur-sm rounded-xl p-6 border border-blue-800/30 relative group hover:border-cyan-500/30 transition-all">
             <div className="absolute -top-4 left-6 h-8 w-8 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-full flex items-center justify-center">
@@ -58,18 +56,12 @@ const Testimonial: React.FC<TestimonialProps> = ({ quote, author, role, image, p
                 <p className="text-blue-100/80 italic mb-6">{quote}</p>
 
                 <div className="flex items-center gap-4">
-                    <img
-                        src={image}
-                        alt={author}
-                        className="w-12 h-12 rounded-full object-cover border-2 border-cyan-400/30"
-                    />
                     <div>
                         <h4 className="text-white font-medium">{author}</h4>
-                        <p className="text-blue-200/60 text-sm">{role}</p>
                         <p className="text-cyan-400 text-sm mt-1">
                             Project: {project}
                             {award && (
-                                <span className="ml-2 text-yellow-400 flex items-center gap-1">
+                                <span className=" mt-1 text-yellow-400 flex items-center gap-1">
                                     <Trophy size={14} />
                                     {award}
                                 </span>
@@ -89,38 +81,17 @@ const TestimonialsEventsSection: React.FC = () => {
     });
     const testimonials: TestimonialProps[] = [
         {
-            quote: "OceanHacks was a transformative experience. We developed an AI-powered coral reef monitoring system and won first place. The mentorship and resources provided were exceptional.",
-            author: "Sarah Chen",
-            role: "Software Engineer @ MarineTech",
-            image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            project: "CoralGuard AI",
-            award: "1st Place 2023"
+            quote: "Our team SYNTAX-SQUAD-001 had an unforgettable experience, and winning 1st prize in the IoT track made it even more special!. And yes—count on us, we'll be coming back next year for sure!",
+            author: "Lavya Kumar",
+            project: "IOT Based",
+            award: "1st Place in IOT"
         },
         {
-            quote: "The collaborative environment at OceanHacks led us to create an innovative solution for tracking marine plastic pollution. The connections we made were invaluable.",
+            quote: "Huge thanks to all the organizers, judges, coordinators, and the entire app team for such an amazing hackathon experience! Got full support at every step, really had a great time. This was honestly the best experience I've had at NIT Hamirpur.",
             author: "James Rodriguez",
-            role: "Environmental Data Scientist",
-            image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
             project: "PlasticTracker",
             award: "Best Sustainability Solution"
         },
-        {
-            quote: "As a first-time hackathon participant, I was amazed by the support and encouragement from the OceanHacks community. Our project on wave energy harvesting opened new career opportunities.",
-            author: "Emma Watson",
-            role: "Renewable Energy Engineer",
-            image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            project: "WaveHarvest",
-            award: "Most Technical Innovation"
-        },
-        {
-            quote: "As a first-time hackathon participant, I was amazed by the support and encouragement from the OceanHacks community. Our project on wave energy harvesting opened new career opportunities.",
-            author: "Emma Watson",
-            role: "Renewable Energy Engineer",
-            image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-            project: "WaveHarvest",
-            award: "Most Technical Innovation"
-        },
-
     ];
 
 
