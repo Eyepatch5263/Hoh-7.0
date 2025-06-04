@@ -45,9 +45,9 @@ const Header = () => {
                     <div className="flex items-center">
                         {
                             !isScrolled ? (
-                                <img width={"48"} src={'favicon.jpg'} />
+                                <img width={"48"} height={"48"} alt="hoh_logo" src={'favicon.jpg'} />
                             ) : (
-                                <img width={"48"} src={'hoh3.png'} />
+                                <img width={"48"} height={"48"} alt="hoh_logo" src={'hoh3.png'} />
                             )
                         }
                         <span

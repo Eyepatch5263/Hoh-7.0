@@ -55,20 +55,23 @@ const Footer = () => {
                         <h4 className="text-white font-semibold text-lg mb-4">Company</h4>
                         <ul className="space-y-3">
                             {['about', 'prize', 'testimonials', 'contact', 'faq', "team"].map((item) => (
-                                item === 'team' ? (
-                                    <a
-                                        key={item}
-                                        href="/team"
-                                        className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300"
-                                    >
-                                        {item}
-                                    </a>
-                                ) :
-                                    <li key={item}>
-                                        <a onClick={() => scrollToSection(item)} className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300">
+                                <li key={item}>
+                                    {item === 'team' ? (
+                                        <a
+                                            href="/team"
+                                            className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300"
+                                        >
                                             {item}
                                         </a>
-                                    </li>
+                                    ) : (
+                                        <a
+                                            onClick={() => scrollToSection(item)}
+                                            className="capitalize cursor-pointer text-blue-200 hover:text-teal-300 transition-colors duration-300"
+                                        >
+                                            {item}
+                                        </a>
+                                    )}
+                                </li>
                             ))}
                         </ul>
                     </div>

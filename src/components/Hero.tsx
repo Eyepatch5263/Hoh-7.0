@@ -15,14 +15,14 @@ const Landing = () => {
                     <div className="flex flex-col md:flex-row items-center justify-center mt-16">
                         {/* Hero Text */}
                         <div className="max-w-2xl flex justify-center items-center md:text-left mx-auto">
-                            <h1 className="text-4xl  md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                                <span className="block text-center">
+                            <div className="text-4xl  md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                                <h1 className="block text-center">
                                     Beneath and Beyond
-                                </span>
-                                <span className="block text-center">
+                                </h1>
+                                <h1 className="block text-center">
                                     Think Deeper, Build Farther
-                                </span>
-                            </h1>
+                                </h1>
+                            </div>
                         </div>
 
                     </div>

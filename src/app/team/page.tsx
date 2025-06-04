@@ -17,7 +17,7 @@ interface TeamMemberProps {
 
 const teamMembers = [
     {
-        image: "./sankalp.jpg",
+        image: "./sankalp.webp",
         name: "Sankalp gupta",
         role: "Secretary",
         social: {
@@ -26,7 +26,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./aryan.jpg",
+        image: "./aryan.webp",
         name: "Aryan Raghav",
         role: "Convener",
         social: {
@@ -35,7 +35,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./lead_avinash.jpg",
+        image: "./lead_avinash.webp",
         name: "Avinash Garla",
         role: "Lead Organiser",
         social: {
@@ -44,7 +44,7 @@ const teamMembers = [
         }
     },
     {
-        image: "pratyush_web.jpg",
+        image: "pratyush_web.webp",
         name: "Pratyush Pragyey",
         role: "Web Lead",
         social: {
@@ -53,7 +53,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./design_craft_sejal.jpeg",
+        image: "./design_craft_sejal.webp",
         name: "Sejal Sharma",
         role: "Design Lead",
         social: {
@@ -62,7 +62,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./finance_akanksha.jpeg",
+        image: "./finance_akanksha.webp",
         name: "Akanksha Kumari",
         role: "Finance Lead",
         social: {
@@ -71,7 +71,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./finance_ishan.jpg",
+        image: "./finance_ishan.webp",
         name: "Ishaan Yadav",
         role: "Finance Lead",
         social: {
@@ -80,7 +80,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./internal_affair_arjun.jpeg",
+        image: "./internal_affair_arjun.webp",
         name: "Arjun Prajapti",
         role: "Internal Affairs Lead",
         social: {
@@ -89,7 +89,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./internal_affair_urvashi.jpeg",
+        image: "./internal_affair_urvashi.webp",
         name: "Urvashi Nandan",
         role: "Internal Affairs Lead",
         social: {
@@ -98,7 +98,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./media_promo_rudransh.jpg",
+        image: "./media_promo_rudransh.webp",
         name: "Rudransh Sharma",
         role: "Media & Promotion Lead",
         social: {
@@ -107,7 +107,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./pr_akshat.jpeg",
+        image: "./pr_akshat.webp",
         name: "Akshat Tripathi",
         role: "Public Relations Lead",
         social: {

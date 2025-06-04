@@ -3,15 +3,20 @@ import React, { useEffect, useState } from 'react';
 
 const NUM_BUBBLES = 20;
 
-const generateBubbles = () =>
-    Array.from({ length: NUM_BUBBLES }).map(() => ({
-        width: Math.random() * 10 + 4,
-        height: Math.random() * 10 + 4,
-        left: Math.random() * 100,
-        bottom: -Math.random() * 20,
-        animationDuration: Math.random() * 6 + 6,
-        animationDelay: Math.random() * 2,
-    }));
+const generateBubbles = () => {
+    const arr = [];
+    for (let i = 0; i < NUM_BUBBLES; i++) {
+        arr.push({
+            width: Math.random() * 10 + 4,
+            height: Math.random() * 10 + 4,
+            left: Math.random() * 100,
+            bottom: -Math.random() * 20,
+            animationDuration: Math.random() * 6 + 6,
+            animationDelay: Math.random() * 2,
+        });
+    }
+    return arr;
+};
 
 const WaveAnimation = () => {
     const [bubbles, setBubbles] = useState<Array<ReturnType<typeof generateBubbles>[number]>>([]);

@@ -38,12 +38,13 @@ const ContactForm = () => {
 
             <div className="container mx-auto px-4 md:px-6">
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 relative inline-block">
-                        <span className="relative z-10">Dive In Touch</span>
-                        <span className="absolute bottom-1 left-0 w-full h-3 bg-teal-200/50 -z-10 transform -rotate-1"></span>
-                    </h2>
+                    <div className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 relative inline-block">
+                        <h2 className="md:text-5xl text-3xl font-bold text-center text-blue-700">
+                            Dive In Touch
+                        </h2>  
+                    </div>
                     <p className="text-lg text-blue-700 max-w-2xl mx-auto">
-                        Ready to elevate your digital experience with oceanic design? Let&apos;s connect.
+                        Ready to elevate your coding skills ? Let&apos;s connect.
                     </p>
                 </div>
 
@@ -92,9 +93,9 @@ const ContactForm = () => {
                                         href="#"
                                         className="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors duration-300"
                                     >
-                                        <span className="sr-only">{social}</span>
+                                        <h3 className="sr-only">{social}</h3>
                                         {/* Icon would go here, using text placeholder */}
-                                        <span className="uppercase text-xs">{social.charAt(0)}</span>
+                                        <h3 className="uppercase text-xs">{social.charAt(0)}</h3>
                                     </a>
                                 ))}
                             </div>
@@ -173,8 +174,8 @@ const ContactForm = () => {
                                     type="submit"
                                     disabled={isSubmitting}
                                     className={`w-full flex items-center justify-center px-6 py-3 rounded-lg font-medium text-white transition-all duration-300 ${isSubmitting
-                                            ? 'bg-blue-400 cursor-not-allowed'
-                                            : 'bg-blue-800 hover:bg-blue-700 hover:shadow-lg'
+                                        ? 'bg-blue-400 cursor-not-allowed'
+                                        : 'bg-blue-800 hover:bg-blue-700 hover:shadow-lg'
                                         }`}
                                 >
                                     {isSubmitting ? (

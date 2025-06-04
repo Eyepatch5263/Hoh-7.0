@@ -16,31 +16,31 @@ interface TestimonialProps {
 
 const galleryImages = [
     {
-        url: '/img3.jpg',
+        url: '/img3.webp',
         caption: 'Collaborative Coding Sessions'
     },
     {
-        url: '/img4.jpg',
+        url: '/img4.webp',
         caption: 'Team Discussions'
     },
     {
-        url: '/img5.jpg',
+        url: '/img5.webp',
         caption: 'Project Presentations'
     },
     {
-        url: '/img6.jpg',
+        url: '/img6.webp',
         caption: 'Award Ceremony'
     },
     {
-        url: '/img1.jpg',
+        url: '/img1.webp',
         caption: 'Mentorship Sessions'
     },
     {
-        url: '/img2.jpg',
+        url: '/img2.webp',
         caption: 'Judging Round'
     },
     {
-        url: '/img7.jpg',
+        url: '/img7.webp',
         caption: 'Organizing Team'
     }
 ];

@@ -24,6 +24,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "Hack On Hills - 7.0",
+              "startDate": "2025-10-10T00:00:00Z",
+              "endDate": "2025-10-13T23:59:59Z",
+              "url": "https://hackonhills.com",
+              "potentialAction": {
+                "@type": "RegisterAction",
+                "target": "https://hackonhills.com/register",
+                "query-input": "required name=hackonhills"
+              }
+            })
+          }}
+        />
+      </head>
       <body
         className={`${sansita.className}`}
       >
