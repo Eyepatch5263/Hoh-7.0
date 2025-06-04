@@ -1,4 +1,5 @@
 "use client"
+import Image from 'next/image';
 import React from 'react';
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
                     {/* Company Info */}
                     <div>
                         <div className="flex items-center mb-4">
-                            <img width={"48"} src={'favicon.jpg'} />
+                            <Image alt="hoh_logo" width={"48"} height={"48"} src={'/favicon.webp'} />
                             <span className="ml-2 text-xl font-semibold text-white">Hack On Hills</span>
                         </div>
                         <p className="text-blue-200 mb-6">

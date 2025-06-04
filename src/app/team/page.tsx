@@ -4,6 +4,7 @@ import React from 'react';
 import { Instagram, LinkedinIcon } from 'lucide-react';
 import SectionTitle from '../../components/SectionTitle';
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
 
 interface TeamMemberProps {
     image: string;
@@ -17,7 +18,7 @@ interface TeamMemberProps {
 
 const teamMembers = [
     {
-        image: "./sankalp.webp",
+        image: "/sankalp.webp",
         name: "Sankalp gupta",
         role: "Secretary",
         social: {
@@ -26,7 +27,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./aryan.webp",
+        image: "/aryan.webp",
         name: "Aryan Raghav",
         role: "Convener",
         social: {
@@ -35,7 +36,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./lead_avinash.webp",
+        image: "/lead_avinash.webp",
         name: "Avinash Garla",
         role: "Lead Organiser",
         social: {
@@ -44,7 +45,7 @@ const teamMembers = [
         }
     },
     {
-        image: "pratyush_web.webp",
+        image: "/pratyush_web.webp",
         name: "Pratyush Pragyey",
         role: "Web Lead",
         social: {
@@ -53,7 +54,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./design_craft_sejal.webp",
+        image: "/design_craft_sejal.webp",
         name: "Sejal Sharma",
         role: "Design Lead",
         social: {
@@ -62,7 +63,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./finance_akanksha.webp",
+        image: "/finance_akanksha.webp",
         name: "Akanksha Kumari",
         role: "Finance Lead",
         social: {
@@ -71,7 +72,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./finance_ishan.webp",
+        image: "/finance_ishan.webp",
         name: "Ishaan Yadav",
         role: "Finance Lead",
         social: {
@@ -80,7 +81,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./internal_affair_arjun.webp",
+        image: "/internal_affair_arjun.webp",
         name: "Arjun Prajapti",
         role: "Internal Affairs Lead",
         social: {
@@ -89,7 +90,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./internal_affair_urvashi.webp",
+        image: "/internal_affair_urvashi.webp",
         name: "Urvashi Nandan",
         role: "Internal Affairs Lead",
         social: {
@@ -98,7 +99,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./media_promo_rudransh.webp",
+        image: "/media_promo_rudransh.webp",
         name: "Rudransh Sharma",
         role: "Media & Promotion Lead",
         social: {
@@ -107,7 +108,7 @@ const teamMembers = [
         }
     },
     {
-        image: "./pr_akshat.webp",
+        image: "/pr_akshat.webp",
         name: "Akshat Tripathi",
         role: "Public Relations Lead",
         social: {
@@ -123,8 +124,11 @@ const TeamMember: React.FC<TeamMemberProps> = ({ image, name, role, social }) =>
 
             <div className="bg-blue-900/20 backdrop-blur-sm rounded-xl border-r-4 border-b-4 border-cyan-500 hover:border-none overflow-hidden group relative transform transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20">
                 <div className="aspect-square overflow-hidden relative">
-                    <img
+                    <Image
+                        loading='lazy'
                         src={image}
+                        width={300}
+                        height={300}
                         alt={name}
                         className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-110"
                     />
@@ -181,7 +185,7 @@ const TeamSection = () => {
                 bg-transparent py-5">
                 <div className="flex justify-between items-center">
                     <div onClick={() => { router.push("/") }} className="flex items-center cursor-pointer">
-                        <img width={"48"} src={'favicon.jpg'} />
+                        <Image alt='hoh_logo' width={"48"} height={"48"} src={'/favicon.webp'} />
                         <span
                             className={`ml-4 text-3xl font-semibold text-white
                                 }`}

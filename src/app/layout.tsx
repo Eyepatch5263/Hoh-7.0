@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Hack On Hills - 7.0",
   description: "Join HOH-7.0, the premier hackathon event for innovators, builders, and dreamers. Compete for prizes, network with industry leaders, and showcase your skills.",
   icons: {
-    icon: "./hoh_logo.png"
+    icon: "/hoh2.webp"
   }
 };
 

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -45,9 +46,9 @@ const Header = () => {
                     <div className="flex items-center">
                         {
                             !isScrolled ? (
-                                <img width={"48"} height={"48"} alt="hoh_logo" src={'favicon.jpg'} />
+                                <Image width={"48"} height={"48"} alt="hoh_logo" src={'/favicon.webp'} />
                             ) : (
-                                <img width={"48"} height={"48"} alt="hoh_logo" src={'hoh3.png'} />
+                                <Image width={"48"} height={"48"} alt="hoh_logo" src={'/hoh3.webp'} />
                             )
                         }
                         <span

@@ -4,6 +4,7 @@ import { Quote, Trophy } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 
 interface TestimonialProps {
@@ -130,7 +131,11 @@ const TestimonialsEventsSection: React.FC = () => {
                                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
                                         transition={{ duration: 0.6, delay: index * 0.1 }}
                                     >
-                                        <img
+                                        <Image
+                                            width={320}
+                                            height={240}
+                                            key={image.url}
+                                        loading='lazy'
                                             src={image.url}
                                             alt={image.caption}
                                             className="w-full h-full object-cover"

@@ -4,10 +4,10 @@ import React, { useState, useEffect } from "react";
 // 🎭 Flip Unit Component for Each Digit
 const FlipUnit: React.FC<{ value: string; label: string }> = ({ value, label }) => {
     return (
-        <div className="flex flex-col items-center">
-            <div className="relative w-14 h-20 md:w-16 md:h-24  text-[#a3d1f4] text-4xl md:text-5xl font-bold overflow-hidden">
+        <div className="flex flex-col items-center ">
+            <div className="relative w-14 h-20 md:w-20 md:h-24  text-[#a3d1f4] text-4xl md:text-5xl font-bold overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center  opacity-10"></div>
-                <div className="absolute inset-0 flex items-center justify-center animate-flip">{value}</div>
+                <div className="absolute inset-0 flex px-2 items-center justify-center animate-flip">{value}</div>
             </div>
             <span className="text-[#bfe4fd] uppercase text-xs md:text-sm mt-2">{label}</span>
         </div>
@@ -46,7 +46,7 @@ const CountdownTimer: React.FC = () => {
             setTimeLeft(calculateTimeLeft());
         }, 1000);
         return () => clearInterval(timer);
-    }, []);
+    });
 
     return (
         <div className="w-screen h-[16rem] flex flex-col items-center justify-center">

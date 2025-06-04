@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
 import WaveAnimation from "./WaveAnimation";
-import CountdownTimer from "@/utils/Timing";
+import dynamic from "next/dynamic";
 
-
+const CountdownTimer = dynamic(() => import("@/utils/Timing"), { ssr: false });
 const Landing = () => {
-    
+
     return (
         <div className="relative min-h-screen snap-start overflow-hidden bg-gradient-to-b from-blue-900 to-blue-950">
             <WaveAnimation />
@@ -15,13 +15,13 @@ const Landing = () => {
                     <div className="flex flex-col md:flex-row items-center justify-center mt-16">
                         {/* Hero Text */}
                         <div className="max-w-2xl flex justify-center items-center md:text-left mx-auto">
-                            <div className="text-4xl  md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                            <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                                 <h1 className="block text-center">
                                     Beneath and Beyond
                                 </h1>
-                                <h1 className="block text-center">
+                                <h2 className="block text-center text-3xl md:text-4xl lg:text-5xl font-semibold mt-2">
                                     Think Deeper, Build Farther
-                                </h1>
+                                </h2>
                             </div>
                         </div>
 
@@ -44,7 +44,7 @@ const Landing = () => {
                     Explore
                 </button>
             </div>
-            
+
         </div>
     );
 };

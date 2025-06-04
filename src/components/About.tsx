@@ -1,5 +1,6 @@
 import React from "react";
 import { Globe, Lightbulb, Target, Users } from "lucide-react";
+import Image from "next/image";
 
 
 interface ValueCardProps {
@@ -84,7 +85,7 @@ const About = () => {
 
                 {/* Right Image */}
                 <div className="mx-0 md:mx-20 w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
-                    <img src="/hoh.svg" className="opacity-90 w-[80%] md:w-[600px] hidden md:block" alt="Hackathon Illustration" />
+                    <Image width={200} height={400} src="/hoh.svg" className="opacity-90 w-[80%] md:w-[600px] hidden md:block" alt="Hackathon Illustration" />
                 </div>
             </div>
 
