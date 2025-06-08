@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hackonhills.com
+
+# Sitemaps
+Sitemap: https://hackonhills.com/sitemap.xml

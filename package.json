@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "analyze": "next-bundle-analyzer"
+    "analyze": "next-bundle-analyzer",
+    "postbuild":"next-sitemap"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.8",
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.511.0",
     "next": "15.3.2",
+    "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-intersection-observer": "^9.16.0"
