@@ -32,6 +32,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Event",
               "name": "Hack On Hills - 7.0",
+              "logo":"/hoh2.webp",
               "startDate": "2025-10-10T00:00:00Z",
               "endDate": "2025-10-13T23:59:59Z",
               "url": "https://hackonhills.com",
