@@ -181,7 +181,7 @@ const TeamSection = () => {
 
     return (
         <section id="team" className=" bg-gradient-to-b from-blue-950 to-blue-900 relative overflow-hidden">
-            <div className="container ml-10 mb-10 mx-auto px-4 md:px-6 fixed w-full z-50 transition-all duration-300
+            <div className="container ml-2 md:ml-10 mb-10 mx-auto px-4 md:px-6 w-full z-50 transition-all duration-300
                 bg-transparent py-5">
                 <div className="flex justify-between items-center">
                     <div onClick={() => { router.push("/") }} className="flex items-center cursor-pointer">
