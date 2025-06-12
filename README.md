@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚓ Hack On Hills 7.0 – Marines Of The Blue
 
-## Getting Started
+**Hack On Hills 7.0** is the official website for NITH’s flagship hackathon, themed "Marines of the Blue." It serves as the digital front for participants and enthusiasts to explore event details, schedules, speaker info, FAQs, and more.
 
-First, run the development server:
+This project delivers a smooth, responsive, and modern UI — reflecting the innovation and creativity of the event itself.
+
+> 🚀 Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+
+---
+
+## 🌐 Live Demo
+
+Check out the production site here:  
+🔗 [https://hackonhills.com](https://hackonhills.com)
+
+---
+
+## 🧰 Tech Stack
+
+| Category         | Tech                                     |
+|------------------|-------------------------------------------|
+| Framework        | [Next.js](https://nextjs.org/)           |
+| Language         | [TypeScript](https://www.typescriptlang.org/) |
+| Styling          | [Tailwind CSS](https://tailwindcss.com/) |
+| Deployment       | [Vercel](https://vercel.com/)            |
+| Fonts & Assets   | Google Fonts, SVGs                       |
+
+---
+
+## 📸 Features
+
+- ⚓ Hero section themed around marine vibes
+- 📅 Full event schedule & timeline
+- 🎤 Speaker & judge showcase
+- ❓ Frequently Asked Questions (FAQs)
+- 📢 Sponsor & community partner acknowledgments
+- 📱 Responsive across all screen sizes
+- 🌙 Dark mode ready (optional implementation ready)
+
+---
+
+## 📦 Getting Started – Local Development
+
+### 1. Clone the repository
 
 ```bash
+git clone https://github.com/Eyepatch5263/Hoh-7.0.git
+cd Hoh-7.0
+```
+### 2. Install dependencies
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+### 3. Run the development server
+```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Project Structure
+```bash
+.
+├── app/              # App router pages (Next.js 13+)
+│   └── page.tsx      # Root landing page
+├── public/           # Static files (images, icons)
+├── src/              # Components, utils, hooks (if any)
+├── tailwind.config.js
+├── [tsconfig.json](http://_vscodecontentref_/1)
+├── [postcss.config.mjs](http://_vscodecontentref_/2)
+├── [package.json](http://_vscodecontentref_/3)
+└── [README.md](http://_vscodecontentref_/4)
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🤝 Contributing
 
-## Learn More
+### Have suggestions or want to contribute?
 
-To learn more about Next.js, take a look at the following resources:
+We welcome contributions from the community! To get started:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Fork the repo**: Click on the "Fork" button at the top right of this page.
+2. **Create a branch**: For bug fixes or new features, create a new branch from the `main` branch. Use descriptive names for your branches, like `fix-typo-in-schedule` or `add-dark-mode-toggle`.
+3. **Make changes**: Implement your bug fix or feature. Ensure your changes work well with the existing code and don't break any functionality.
+4. **Test your changes**: Run the development server and test your changes thoroughly.
+5. **Commit and push**: Commit your changes with a clear message describing what you did. Push your branch to your forked repository.
+6. **Submit a pull request (PR)**: Go to the "Pull requests" tab on the main repository page. Click on "New pull request". Select your branch and submit the PR. Provide a clear description of your changes and why they should be merged.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Code of Conduct
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please note that this project adheres to a [Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
