@@ -181,17 +181,18 @@ const TeamSection = () => {
 
     return (
         <section id="team" className=" bg-gradient-to-b from-blue-950 to-blue-900 relative overflow-hidden">
-            <div className="container ml-2 md:ml-10 mb-10 mx-auto px-4 md:px-6 w-full z-50 transition-all duration-300
+            <div onClick={() => { router.push("/") }}  className="container cursor-pointer ml-2 md:ml-10 mb-10 mx-auto px-4 md:px-6 w-full z-50 transition-all duration-300
                 bg-transparent py-5">
                 <div className="flex justify-between items-center">
-                    <div onClick={() => { router.push("/") }} className="flex items-center cursor-pointer">
-                        <Image alt='hoh_logo' width={"48"} height={"48"} src={'/favicon.webp'} />
-                        <span
+                    <div  className="flex items-center cursor-pointer">
+                        <Image  alt='hoh_logo' width={"48"} height={"48"} src={'/favicon.webp'} />
+                        <button
+                        
                             className={`ml-4 text-3xl font-semibold text-white
                                 }`}
                         >
                             HOH
-                        </span>
+                        </button>
                     </div>
                 </div>
             </div>

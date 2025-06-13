@@ -74,6 +74,7 @@ export default function RootLayout({
         className={`${sansita.className}`}
       >
         {children}
+        <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
       </body>
     </html>
   );
