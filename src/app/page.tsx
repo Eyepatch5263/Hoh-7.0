@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PrizePoolSection from "@/components/PrizePool";
+import SponsorsSection from "@/components/Sponsors";
 import TestimonialsEventsSection from "@/components/Voices";
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <About/>
       <PrizePoolSection/>
       <TestimonialsEventsSection/>
+      <SponsorsSection/>
       <FAQ/>
       <ContactForm />
       <Footer />
