@@ -37,10 +37,12 @@ export default function SponsorsSection() {
                 {
                     name: "Devfolio",
                     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Devfolio_Logo-White%402x-ZaNDeRtKGecstXyvSLZkQ3boQYnwqb.png",
+                    alt:"DEVFOLIO LOGO",
                 },
                 {
                     name: "ETHIndia",
                     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ethindia-light-YeS3YkDSlazR7JfV8TEd4DdgNJjS7O.png",
+                    alt:"ETHINDIA LOGO",
                 }
             ],
         },
@@ -92,7 +94,7 @@ ${tier.sponsors.length === 4 ? "md:grid-cols-4" : ""}
                                             width={200}
                                             height={100}
                                             src={sponsor.logo || "/placeholder.svg"}
-                                            alt={sponsor.name}
+                                            alt={sponsor.alt}
                                             className="object-contain filter brightness-100 group-hover:brightness-110 transition-all duration-300"
                                         />
                                     </div>
