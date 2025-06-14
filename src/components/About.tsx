@@ -61,7 +61,7 @@ const About = () => {
                 className="min-h-screen w-screen snap-start flex flex-col md:flex-row justify-between items-center bg-gradient-to-t from-blue-300/50 to-blue-900 px-6 md:px-20"
             >
                 {/* Left Content */}
-                <div className="flex flex-col space-y-8 w-full md:w-1/2 text-white">
+                <div className="flex flex-col mb-10 space-y-8 w-full md:w-1/2 text-white">
                     <h1 className="text-4xl md:text-5xl font-bold pt-4 text-[#a2cefd]">
                         ABOUT HACK ON HILLS 7.0
                     </h1>

@@ -61,7 +61,7 @@ const Header = () => {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex space-x-8">
-                        {['about', 'prize', 'testimonials', 'faq', 'contact', 'team'].map((item) => (
+                        {['about', 'prize', 'sponsors', 'faq', 'contact', 'team'].map((item) => (
                             item === 'team' ? (
                                 <a
                                     key={item}
@@ -98,7 +98,7 @@ const Header = () => {
                 {isMenuOpen && (
                     <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg animate-fadeIn">
                         <nav className="flex flex-col space-y-4 px-4 items-center">
-                            {['about', 'prize', 'testimonials', 'faq', "contact", "team"].map((item) => (
+                            {['about', 'prize', 'sponsors', 'faq', "contact", "team"].map((item) => (
                                 item === 'team' ? (
                                     <a
                                         key={item}

@@ -55,7 +55,7 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4">Company</h4>
                         <ul className="space-y-3">
-                            {['about', 'prize', 'testimonials', 'contact', 'faq', "team"].map((item) => (
+                            {['about', 'prize', 'sponsors', 'contact', 'faq', "team"].map((item) => (
                                 <li key={item}>
                                     {item === 'team' ? (
                                         <a
