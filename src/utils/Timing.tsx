@@ -15,7 +15,7 @@ const FlipUnit: React.FC<{ value: string; label: string }> = ({ value, label }) 
 };
 
 const CountdownTimer: React.FC = () => {
-const targetDate = new Date("2025-10-02T00:00:00").getTime();
+const targetDate = new Date("2025-10-30T00:00:00").getTime();
     const [timeLeft, setTimeLeft] = useState({
         days: "00",
         hours: "00",
