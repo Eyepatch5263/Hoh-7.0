@@ -66,7 +66,7 @@ export default function SponsorsSection() {
                 },
                 {
                     name: "Aptos",
-                    logo: "/aptos.png",
+                    logo: "https://res.cloudinary.com/dvnrlqqpq/image/upload/v1760383295/Aptos_Primary_WHT_bgm3cb.png",
                     alt: "APTOS LOGO",
                 },
                 {
