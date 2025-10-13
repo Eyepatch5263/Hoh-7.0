@@ -52,7 +52,7 @@ const SpecialAward: React.FC<SpecialAwardProps> = ({ title, prize, icon }) => {
             </div>
             <div>
                 <h4 className="text-white font-medium">{title}</h4>
-                <p className="text-cyan-300">{prize}</p>
+                <p className="text-cyan-300"> &#8377; {prize}</p>
             </div>
         </div>
     );
@@ -62,21 +62,21 @@ const PrizePoolSection: React.FC = () => {
     const mainPrizes = [
         {
             title: "Second Place",
-            amount: "X0,000",
+            amount: "30,000",
             description: "Runner-up prize for exceptional creativity and technical execution.",
             icon: <Award size={24} />,
             position: "second" as const
         },
         {
             title: "First Place",
-            amount: "X0,000",
+            amount: "20,000",
             description: "The grand prize for the most innovative and impactful ocean technology solution.",
             icon: <Trophy size={24} />,
             position: "first" as const
         },
         {
             title: "Third Place",
-            amount: "X0,000",
+            amount: "10,000",
             description: "Third place prize for outstanding achievement in ocean innovation.",
             icon: <Target size={24} />,
             position: "third" as const
@@ -86,22 +86,27 @@ const PrizePoolSection: React.FC = () => {
     const specialAwards = [
         {
             title: "Best Sustainability Solution",
-            prize: "X,000",
+            prize: "18,000",
             icon: <Lightbulb size={20} />
         },
         {
-            title: "Most Technical Innovation",
-            prize: "X,000",
+            title: "Best All Girls",
+            prize: "8,000",
             icon: <Trophy size={20} />
         },
         {
-            title: "Best UI/UX Design",
-            prize: "X,000",
+            title: "Best Beginner",
+            prize: "8,000",
             icon: <Award size={20} />
         },
         {
-            title: "Community Choice",
-            prize: "X,000",
+            title: "Best Web3",
+            prize: "8,000",
+            icon: <Target size={20} />
+        },
+        {
+            title: "Best AI Agents",
+            prize: "8,000",
             icon: <Target size={20} />
         }
     ];
@@ -117,7 +122,7 @@ const PrizePoolSection: React.FC = () => {
             <div className="container mx-auto px-4 relative z-10">
                 <SectionTitle
                     title="Prize Pool"
-                    subtitle="Compete for a total prize pool of $XX,000 across multiple categories and special awards - Prizes will be Announced soon!"
+                    subtitle="Compete for a total prize pool of   &#8377; 110,000 + across multiple categories and special awards"
                     light={true}
                 />
 
@@ -129,8 +134,18 @@ const PrizePoolSection: React.FC = () => {
 
                 <div className="bg-blue-900/10 backdrop-blur-sm rounded-xl p-8 border border-blue-800/30">
                     <h3 className="text-xl font-semibold text-white mb-6">Special Awards</h3>
+
+                    <div className="mb-6 w-full justify-center flex">
+                        <SpecialAward
+                            title="Best Sustainability Solution"
+                            prize="18,000"
+                            icon={<Lightbulb size={20} />}
+                        />
+                    </div>
+
+                    {/* Other Awards - Grid Layout */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {specialAwards.map((award, index) => (
+                        {specialAwards.filter(award => award.title !== "Best Sustainability Solution").map((award, index) => (
                             <SpecialAward key={index} {...award} />
                         ))}
                     </div>
