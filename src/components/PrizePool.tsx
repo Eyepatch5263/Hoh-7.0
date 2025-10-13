@@ -62,14 +62,14 @@ const PrizePoolSection: React.FC = () => {
     const mainPrizes = [
         {
             title: "Second Place",
-            amount: "30,000",
+            amount: "20,000",
             description: "Runner-up prize for exceptional creativity and technical execution.",
             icon: <Award size={24} />,
             position: "second" as const
         },
         {
             title: "First Place",
-            amount: "20,000",
+            amount: "30,000",
             description: "The grand prize for the most innovative and impactful ocean technology solution.",
             icon: <Trophy size={24} />,
             position: "first" as const
