@@ -81,13 +81,24 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-semibold text-lg mb-4">Resources</h4>
                         <ul className="space-y-3">
-                            {['Code of Conduct', 'Venue', "Marine's Flow", 'FAQ', 'Discord'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-blue-200 hover:text-teal-300 transition-colors duration-300">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
+                            {['Code of Conduct', "Marine's Flow", 'FAQ', 'Whatsapp'].map((item) => {
+                                const isWhatsapp = item.toLowerCase() === 'whatsapp';
+                                const isMarine = item.toLowerCase() === "marine's flow";
+                                const isCoc = item.toLowerCase() === 'code of conduct';
+                                const href = isWhatsapp ? 'https://chat.whatsapp.com/GFc0VezXmRkA10ihkobKq1?mode=wwt' : isMarine ? 'https://dot-puma-97f.notion.site/HOH-7-0-Marine-s-Guide-19f095b2daf980058a2de1c0691aef59' : isCoc ? '/coc' : "#";
+                                return (
+                                    <li key={item}>
+                                        <a
+                                            href={href}
+                                            className="text-blue-200 hover:text-teal-300 transition-colors duration-300"
+                                            target={isWhatsapp ? "_blank" : undefined}
+                                            rel={isWhatsapp ? "noopener noreferrer" : undefined}
+                                        >
+                                            {item}
+                                        </a>
+                                    </li>
+                                );
+                            })}
                         </ul>
                     </div>
 
