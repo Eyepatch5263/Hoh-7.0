@@ -48,7 +48,7 @@ const Landing = () => {
                             data-button-theme="dark-inverted"
                         ></div>
                     )}
-                    <p>*Registrations are closed for External Team(Teams Outside of NIT Hamirpur)</p>
+                    <p>*Registrations are closed for External Teams (Teams Outside of NIT Hamirpur)</p>
                 </div>
                 {/* <button
                     className="fixed top-11/12 left-0 z-50 -translate-y-1/2 lg:w-20 h-24 w-12 lg:h-40 text-xs lg:text-lg bg-gradient-to-br from-cyan-600 to-blue-500/50 text-white font-bold flex items-center justify-center rounded-r-full shadow-lg hover:scale-105 transition-transform"
