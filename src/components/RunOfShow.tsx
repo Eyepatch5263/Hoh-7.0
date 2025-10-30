@@ -72,7 +72,7 @@ function RunOfShow() {
                             />
 
                             <TimeSlot
-                                name="Mid Evaluation"
+                                name="Endless Domain Session"
                                 time="11:00 AM - 1:00 PM"
                                 location="New Lecture Hall"
                                 highlight={true}
@@ -85,7 +85,7 @@ function RunOfShow() {
                                 location="New Lecture Hall"
                             />
                             <TimeSlot
-                                name="Endless Domain Session"
+                                name="Mid Evaluation"
                                 time="3:00 - 4:30 PM"
                                 location="New Lecture Hall"
                                 highlight={true}
