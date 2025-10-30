@@ -109,7 +109,7 @@ function RunOfShow() {
                     {/* Day 3 */}
                     <div className="bg-[#161B22] rounded-lg p-6 border border-blue-500/20">
                         <h2 className="text-3xl font-bold mb-8 text-center text-blue-500">
-                            DAY 3
+                            DAY 2
                         </h2>
 
                         <div className="space-y-6">
