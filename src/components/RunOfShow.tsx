@@ -31,7 +31,7 @@ function RunOfShow() {
                             <TimeSlot
                                 name="Opening Ceremony"
                                 time="2:00 - 4:00 PM"
-                                location="Auditorium"
+                                location="Mini Auditorium"
                             />
 
                             <TimeSlot
