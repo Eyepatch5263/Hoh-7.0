@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import PrizePoolSection from "@/components/PrizePool";
+import RunOfShow from "@/components/RunOfShow";
 import SponsorsSection from "@/components/Sponsors";
 import TestimonialsEventsSection from "@/components/Voices";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Header/>
       <Hero />
       <About/>
+      <RunOfShow/>
       <PrizePoolSection/>
       <TestimonialsEventsSection/>
       <SponsorsSection/>

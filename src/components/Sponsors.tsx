@@ -114,8 +114,7 @@ export default function SponsorsSection() {
                     <h2 className={`text-3xl md:text-5xl  mb-4 `}>
                         Our <span className="text-primary">Sponsors</span>
                     </h2>
-                    <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
-                    <p className="text-xl max-w-2xl mx-auto text-gray-300">
+                    <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-300">
                         HOH is made possible by the generous support of our sponsors
                     </p>
                 </motion.div>

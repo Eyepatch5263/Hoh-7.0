@@ -43,7 +43,7 @@ const ContactForm = () => {
                             Dive In Touch
                         </h2>  
                     </div>
-                    <p className="text-lg text-blue-700 max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-blue-700 max-w-2xl mx-auto">
                         Ready to elevate your coding skills ? Let&apos;s connect.
                     </p>
                 </div>

@@ -109,7 +109,7 @@ const TestimonialsEventsSection: React.FC = () => {
                         <h3 className="text-4xl md:text-5xl font-bold text-neutral-light mb-6">
                             Highlights from HackOnHills 6.0
                         </h3>
-                        <p className="max-w-3xl mx-auto text-neutral text-lg">
+                        <p className="max-w-3xl mx-auto text-neutral md:text-xl text-lg">
                             Relive the moments from our previous hackathon where innovation met excellence.
                         </p>
                     </motion.div>

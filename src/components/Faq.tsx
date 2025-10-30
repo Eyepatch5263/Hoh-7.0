@@ -75,7 +75,7 @@ const FAQ = () => {
                 <h2 className="md:text-5xl text-3xl font-bold text-center mb-4 text-white">
                     Frequently Asked Questions
                 </h2>
-                <p className="text-lg text-white text-center mb-12 max-w-2xl mx-auto">
+                <p className="text-lg md:text-xl text-white text-center mb-12 max-w-2xl mx-auto">
                     Get all the answers you need about HOH 7.0.
                 </p>
 
