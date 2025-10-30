@@ -47,13 +47,8 @@ function RunOfShow() {
                                 location="New Lecture Hall"
                             />
                             <TimeSlot
-                                name="Disaster Track Explanation"
-                                time="7:00 - 7:30 PM"
-                                location="New Lecture Hall"
-                            />
-                            <TimeSlot
                             name="Mentoring Continues"
-                            time="7:30 PM"
+                            time="7:00 PM"
                             location="New Lecture Hall"
                             />
 
