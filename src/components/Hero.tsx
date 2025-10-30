@@ -3,20 +3,7 @@ import React, { useEffect } from "react";
 import WaveAnimation from "./WaveAnimation";
 import dynamic from "next/dynamic";
 
-const CountdownTimer = dynamic(() => import("@/utils/Timing"), { ssr: false });
 const Landing = () => {
-    const [isClient, setIsClient] = React.useState(false);
-    useEffect(() => {
-        setIsClient(true);
-        const script = document.createElement('script');
-        script.src = 'https://apply.devfolio.co/v2/sdk.js';
-        script.async = true;
-        script.defer = true;
-        document.body.appendChild(script);
-        return () => {
-            document.body.removeChild(script);
-        }
-    }, []);
 
     return (
         <div className="relative min-h-screen snap-start overflow-hidden bg-gradient-to-b from-blue-900 to-blue-950">
@@ -41,13 +28,6 @@ const Landing = () => {
                     {/* <div className="flex justify-center items-center">
                         <CountdownTimer />
                     </div> */}
-                    {isClient && (
-                        <div
-                            className="apply-button"
-                            data-hackathon-slug="hackonhills7"
-                            data-button-theme="dark-inverted"
-                        ></div>
-                    )}
                     {/* <p>*Registrations are closed for External Teams (Teams Outside of NIT Hamirpur)</p> */}
                 </div>
             </div>
