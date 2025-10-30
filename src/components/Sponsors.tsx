@@ -82,6 +82,16 @@ export default function SponsorsSection() {
             ],
         },
         {
+            tier: "Bronze Sponsors",
+            sponsors: [
+                {
+                    name: "Endless Domain",
+                    logo: "./endless_logo.svg",
+                    alt: "DEVTRON LOGO",
+                }
+            ]
+        },
+        {
             tier: "Community Partners",
             sponsors: [
                 {

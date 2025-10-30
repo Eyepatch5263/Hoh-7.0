@@ -50,19 +50,6 @@ const Landing = () => {
                     )}
                     {/* <p>*Registrations are closed for External Teams (Teams Outside of NIT Hamirpur)</p> */}
                 </div>
-                {/* <button
-                    className="fixed top-11/12 left-0 z-50 -translate-y-1/2 lg:w-20 h-24 w-12 lg:h-40 text-xs lg:text-lg bg-gradient-to-br from-cyan-600 to-blue-500/50 text-white font-bold flex items-center justify-center rounded-r-full shadow-lg hover:scale-105 transition-transform"
-                    style={{ borderTopLeftRadius: 0, borderBottomLeftRadius: 0 }}
-                >
-                    Register
-                </button> */}
-                {/* Right half-circle Explore button */}
-                {/* <button
-                    className="fixed top-11/12 right-0 z-50 -translate-y-1/2  lg:w-20 h-24 w-12 lg:h-40 text-xs lg:text-lg bg-gradient-to-br from-cyan-600 to-blue-500/50 text-white font-bold flex items-center justify-center rounded-l-full shadow-lg hover:scale-105 transition-transform"
-                    style={{ borderTopRightRadius: 0, borderBottomRightRadius: 0 }}
-                >
-                    Explore
-                </button> */}
             </div>
 
         </div>
