@@ -45,6 +45,7 @@ function RunOfShow() {
                                 name="AWS Workshop"
                                 time="6:00 - 7:00 PM"
                                 location="New Lecture Hall"
+                                highlight={true}
                             />
                             <TimeSlot
                             name="Mentoring Continues"
