@@ -24,7 +24,7 @@ function RunOfShow() {
                             <TimeSlot
                                 name="Checkin"
                                 time="8:00 AM - 1:00 PM"
-                                location="Auditorium"
+                                location="Mini Auditorium"
                                 highlight={true}
                             />
 
